@@ -1,0 +1,14 @@
+name: pi-speaker
+
+services:
+  builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    image: pi-speaker
+    privileged: true
+    platform: linux/amd64
+    volumes:
+      - /dev:/dev
+      - .:/build:ro

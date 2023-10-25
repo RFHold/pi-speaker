@@ -1,0 +1,10 @@
+# Cache objects
+packer-builder-arm-image
+output-arm-image
+packer_cache/
+
+# Crash log
+crash.log
+
+# For built boxes
+*.box
